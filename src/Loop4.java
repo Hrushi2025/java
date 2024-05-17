@@ -1,3 +1,8 @@
+/*
+ *  * Given 21 Matchsticks and 2 users, A and B (computer and user respectively). 
+ * Users can pick matchsticks not more than four at a time. 
+ * The one who is forced to pick the last matchstick loses. 
+ */
 import java.util.Scanner;
 
 public class Loop4 {

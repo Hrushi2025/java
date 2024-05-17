@@ -1,4 +1,8 @@
-
+/*
+ * get a list a = [2,3,4,55,33,4,55,343,66,77,88,99] and write 
+ * a program to browse over this list and print previous number and 
+ * current number
+ */
     import java.util.Arrays;
 import java.util.List;
 

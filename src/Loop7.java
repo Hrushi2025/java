@@ -1,3 +1,7 @@
+/*
+ *  * get a number from user and check number of occurances of a single digit in that number. 
+ * (for example. Num=7888, check number of occurances of digit 8 in number)
+ */
 import java.util.Scanner;
 
 public class Loop7 {
@@ -7,21 +11,22 @@ public class Loop7 {
         System.out.print("Enter a number: ");
         int number = scanner.nextInt();
         
-        if (isPerfectSquare(number)) {
-            System.out.println(number + " is a perfect square.");
-        } else {
-            System.out.println(number + " is not a perfect square.");
+        System.out.print("Enter the digit to check: ");
+        int digit = scanner.nextInt();
+        
+        String numberStr = String.valueOf(number);
+        char digitChar = String.valueOf(digit).charAt(0);
+        
+        int count = 0;
+        for (int i = 0; i < numberStr.length(); i++) {
+            if (numberStr.charAt(i) == digitChar) {
+                count++;
+            }
         }
         
+        System.out.println("The digit " + digit + " occurs " + count + " times in the number " + number + ".");
+        
         scanner.close();
-    }
-    
-    public static boolean isPerfectSquare(int num) {
-        if (num < 0) {
-            return false; 
-        }
-        int sqrt = (int) Math.sqrt(num);
-        return (sqrt * sqrt == num);
     }
 }
 

@@ -1,39 +1,25 @@
+/*
+ * Get number from user and reverse number in other variable and print output
+ */
+import java.util.Scanner;
 
-    import java.util.Scanner;
-
-public class Loop3 {
+public class Loop3{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
-        System.out.println("Pick a number between 0 and 100 and keep it in your mind.");
-        System.out.println("I will try to guess it!");
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
         
-        int low = 0;
-        int high = 100;
-        boolean guessed = false;
+        int reversedNumber = 0;
+        int temp = number;
         
-        while (!guessed) {
-            int guess = (low + high) / 2;
-            System.out.println("Is your number " + guess + "?");
-            System.out.print("Enter 'h' if my guess is too high, 'l' if it is too low, or 'c' if it is correct: ");
-            char response = scanner.next().charAt(0);
-            
-            switch (response) {
-                case 'h':
-                    high = guess - 1;
-                    break;
-                case 'l':
-                    low = guess + 1;
-                    break;
-                case 'c':
-                    System.out.println("Great! I guessed your number " + guess + " correctly.");
-                    guessed = true;
-                    break;
-                default:
-                    System.out.println("Invalid input. Please enter 'h', 'l', or 'c'.");
-                    break;
-            }
+        while (temp != 0) {
+            int digit = temp % 10; 
+            reversedNumber = reversedNumber * 10 + digit; 
+            temp /= 10; 
         }
+        
+        System.out.println("Reversed number is: " + reversedNumber);
         
         scanner.close();
     }
