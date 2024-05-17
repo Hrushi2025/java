@@ -1,3 +1,8 @@
+/*
+ask user to enter 10 numbers store them in list and print list,
+ count the number of times 10 is present in the list and
+ print the result
+ */
 import java.util.ArrayList;
 import java.util.Scanner;
 

@@ -1,4 +1,7 @@
-
+/*
+ * ask user to enter a string, ask user to enter a character, write a program to 
+ * check number of occurances of that character in the string given by user.
+ */
     
 import java.util.Scanner;
 

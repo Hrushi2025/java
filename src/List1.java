@@ -1,3 +1,7 @@
+/*
+ * start with hard coded list say a = [12,3,34,45,88,23,45,63,3,4,69,99] and find  
+ * maximum in this list (without using python readymade function)
+ */
 public class List1 {
     public static void main(String[] args) {
         int[] a = {12, 3, 34, 45, 88, 23, 45, 63, 3, 4, 69, 99};

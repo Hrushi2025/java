@@ -1,3 +1,6 @@
+/*
+ * use same hard coded list as given in assignment 3, find total of all numbers in the list
+ */
 import java.util.ArrayList;
 
 public class List4 {
