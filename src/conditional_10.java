@@ -7,11 +7,9 @@ public class conditional_10{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Get a character from the user
         System.out.print("Enter a character: ");
         char ch = scanner.next().charAt(0);
 
-        // Check if the character is a number, vowel, or consonant
         if (Character.isDigit(ch)) {
             System.out.println("The entered character is a number.");
         } else if (isVowel(ch)) {
@@ -23,7 +21,6 @@ public class conditional_10{
         scanner.close();
     }
 
-    // Function to check if a character is a vowel
     public static boolean isVowel(char ch) {
         ch = Character.toLowerCase(ch);
         return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u';

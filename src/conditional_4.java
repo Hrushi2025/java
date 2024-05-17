@@ -10,11 +10,9 @@ public class conditional_4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Ask the user to enter a number
         System.out.print("Enter a number: ");
         int number = scanner.nextInt();
 
-        // Check the place value of the number
         if (number >= 1 && number <= 9) {
             System.out.println("The number is in ones place: one");
         } else if (number >= 10 && number <= 99) {
