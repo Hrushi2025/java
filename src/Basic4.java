@@ -8,15 +8,12 @@ public class Basic4  {
         int a = 10;
         int b = 20;
         
-        // Printing initial values of a and b
+    
         System.out.println("Initial value of a is: " + a + " and initial value of b is: " + b);
-        
-        // Swapping values without using a third variable
         a = a + b;
         b = a - b;
         a = a - b;
         
-        // Printing values after swap
         System.out.println("Value of a after swap is: " + a + " and value of b after swap is: " + b);
     }
 }
