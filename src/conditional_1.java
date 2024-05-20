@@ -1,3 +1,8 @@
+/*
+ * ask user to enter name and surname,  print name and surname in lower case 
+ * if name starts with b other wise print name 
+ *  and surname in title case
+ */
 import java.util.Scanner;
 
 public class conditional_1 {
