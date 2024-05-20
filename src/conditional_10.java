@@ -1,3 +1,6 @@
+/*
+ * get three sides of a triangle from user and check if the traingle is right angle triangle.
+ */
 import java.util.Scanner;
 
 public class conditional_10 {
