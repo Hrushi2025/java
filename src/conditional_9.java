@@ -1,33 +1,28 @@
 /*
- * get marks for a student and print grade (if < 30, fail, <50 third class, 
- * <60 second class, <70 first class, >=70 distinction, =100 then gold medal
+ * get a character from user and check if the character is number or vowel or consonent
  */
 import java.util.Scanner;
 
-public class conditional_9 {
+public class conditional_9{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter the marks obtained by the student: ");
-        int marks = scanner.nextInt();
+        System.out.print("Enter a character: ");
+        char ch = scanner.next().charAt(0);
 
-        String grade;
-        if (marks < 30) {
-            grade = "Fail";
-        } else if (marks < 50) {
-            grade = "Third class";
-        } else if (marks < 60) {
-            grade = "Second class";
-        } else if (marks < 70) {
-            grade = "First class";
-        } else if (marks < 100) {
-            grade = "Distinction";
+        if (Character.isDigit(ch)) {
+            System.out.println("The entered character is a number.");
+        } else if (isVowel(ch)) {
+            System.out.println("The entered character is a vowel.");
         } else {
-            grade = "Gold Medal";
+            System.out.println("The entered character is a consonant.");
         }
 
-        System.out.println("Grade: " + grade);
-
         scanner.close();
+    }
+
+    public static boolean isVowel(char ch) {
+        ch = Character.toLowerCase(ch);
+        return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u';
     }
 }

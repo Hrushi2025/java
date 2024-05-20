@@ -1,28 +1,34 @@
-/*
- * get a character from user and check if the character is number or vowel or consonent
- */
 import java.util.Scanner;
 
-public class conditional_10{
+public class conditional_10 {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter a character: ");
-        char ch = scanner.next().charAt(0);
+        System.out.println("Enter the lengths of the three sides of the triangle:");
+        System.out.print("Side 1: ");
+        double side1 = scanner.nextDouble();
+        System.out.print("Side 2: ");
+        double side2 = scanner.nextDouble();
+        System.out.print("Side 3: ");
+        double side3 = scanner.nextDouble();
 
-        if (Character.isDigit(ch)) {
-            System.out.println("The entered character is a number.");
-        } else if (isVowel(ch)) {
-            System.out.println("The entered character is a vowel.");
+        if (isRightAngleTriangle(side1, side2, side3)) {
+            System.out.println("The triangle is a right-angle triangle.");
         } else {
-            System.out.println("The entered character is a consonant.");
+            System.out.println("The triangle is not a right-angle triangle.");
         }
-
-        scanner.close();
     }
 
-    public static boolean isVowel(char ch) {
-        ch = Character.toLowerCase(ch);
-        return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u';
-    }
-}
+    /**
+     *
+     * @param a 
+     * @param b 
+     * @param c 
+     * @return 
+     */
+    public static boolean isRightAngleTriangle(double a, double b, double c) {
+
+ 
+
+

@@ -1,35 +1,33 @@
 /*
- * get three sides of a triangle from user and check if that is a valid triangle
+ * get marks for a student and print grade (if < 30, fail, <50 third class, 
+ * <60 second class, <70 first class, >=70 distinction, =100 then gold medal
  */
+import java.util.Scanner;
 
- import java.util.Scanner;
+public class conditional_8 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
- public class conditional_8{
-     public static void main(String[] args) {
-         Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the marks obtained by the student: ");
+        int marks = scanner.nextInt();
 
-         System.out.print("Enter the length of the first side: ");
-         double side1 = scanner.nextDouble();
- 
-         System.out.print("Enter the length of the second side: ");
-         double side2 = scanner.nextDouble();
- 
-         System.out.print("Enter the length of the third side: ");
-         double side3 = scanner.nextDouble();
- 
-        
-         if (isValidTriangle(side1, side2, side3)) {
-             System.out.println("Yes, the given sides form a valid triangle.");
-         } else {
-             System.out.println("No, the given sides do not form a valid triangle.");
-         }
- 
-         scanner.close();
-     }
- 
-     public static boolean isValidTriangle(double side1, double side2, double side3) {
-         
-         return side1 + side2 > side3 && side1 + side3 > side2 && side2 + side3 > side1;
-     }
- }
- 
+        String grade;
+        if (marks < 30) {
+            grade = "Fail";
+        } else if (marks < 50) {
+            grade = "Third class";
+        } else if (marks < 60) {
+            grade = "Second class";
+        } else if (marks < 70) {
+            grade = "First class";
+        } else if (marks < 100) {
+            grade = "Distinction";
+        } else {
+            grade = "Gold Medal";
+        }
+
+        System.out.println("Grade: " + grade);
+
+        scanner.close();
+    }
+}
