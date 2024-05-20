@@ -5,7 +5,7 @@
  */
 import java.util.Scanner;
 
-public class Loop6 {
+public class Loop16 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

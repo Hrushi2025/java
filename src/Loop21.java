@@ -4,7 +4,7 @@
  */
 import java.util.Scanner;
 
-public class Loop7 {
+public class Loop21 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
